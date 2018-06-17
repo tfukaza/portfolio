@@ -15,7 +15,7 @@ include 'templates/header.php';
 <div class="container">
   <div id="title">
 <h1>HELLO!</h1>
-<h2>Welcome to my portfolio site :)</h2>
+<h2>Welcome to my portfolio site !!!</h2>
 </div>
 <div class = "front-image"></div>
 <div class = "front-image-shadow"></div>
