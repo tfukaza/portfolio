@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+.background{
+  width:100%;
+  height:90vh;
+}
+
+body{
+  margin: 0px;
+
+}
+.container{
+  top:0;
+  padding: 50px 0px 0px 0px;
+}
+
+h1,h2{
+  font-family: 'Montserrat';
+  text-align: center;
+  font-size: 80px;
+  color: #f0f0f0;
+  z-index: 2;
+}
+
+#title{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index:2;
+}
+.content{
+  width:100%;
+}
+
+.header{
+  width:100%;
+  height:100px;
+  margin:20px 0px 0px 0px;
+  position: relative;
+  z-index:3;
+  top:0;
+}
+
+.header ul{
+  padding:0px;
+  margin:0px;
+  width:852px;
+  left:50%;
+  top:10px;
+  transform: translate(-50%,-50%);
+  position: relative;
+}
+.header li{
+  position: relative;
+  display: inline-block;
+}
+.header li a{
+  width:200px;
+  height:60px;
+  margin:0px 40px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+
+}
+
+.header li:hover a p{
+    letter-spacing: 10px;
+  }
+.header li:hover .geometry,.header li:hover .geometry::after{
+    opacity:0.5;
+  }
+
+.header li a p::after{
+  content: '';
+  display: inline-block;
+  width:0px;
+  height: 2px;
+  left:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #5a5050;
+  transition: width 0.2s;
+}
+.fade a p::after{
+  width:100%!important;
+    transition: width 0s;
+}
+.header li a p{
+  background-color: trasparent;
+  text-decoration: none;
+  color:#5a5050;
+  /*line-height: 17px;*/
+  margin-left: 7px;
+  position: relative;
+  display: inline-block;
+  top:25%;
+  transform: translateY(-50%);
+  font-family: 'Montserrat';
+  font-size:17px;
+  letter-spacing: 7px;
+  z-index: -1;
+  /*font-weight: 700;*/
+transition: letter-spacing 0.2s ease, opacity 0.8s cubic-bezier(0.150, 0.615, 0.370, 0.985);
+}
+
+.header li .geometry{
+   opacity: 0;
+   content: '';
+   display: inline-block;
+   width:58px;
+   height: 58px;
+   left:50%;
+   position: absolute;
+   top: 73%;
+   transform: translate(-50%,-50%) rotate(45deg);
+   transition: opacity 0.2s;
+}
+.geometry::after{
+  opacity: 0;
+  content: '';
+  display: inline-block;
+  width:43px;
+  height: 43px;
+  left:50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-40%,-40%) rotate(0deg);
+  border: solid #bcbcbc 0px;
+  background-color: trasparent;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.top-left,.top-right,.bottom-left,.bottom-right{
+  position: absolute;
+  width:4px;
+  height:10px;
+  top:0px;
+  left:0px;
+  background-color:#7c7373;
+  opacity: 0;
+  transition: height 0.5s, transform 0.5s, opacity 0.05s, background-color 0s;
+  background-blend-mode: difference;
+}
+
+
+li:hover .top-right,li:hover .top-left{
+  height:20px;
+}
+li:hover .bottom-left,li:hover .bottom-right{
+  height:20px;
+}
+
+/*
+.top-left{
+  transform: translate(-3px,0px) rotate(1deg);
+  transform-origin: top left;
+}
+.top-right{
+  transform: translate(-1px, -3px) rotate(-91deg);
+  transform-origin: top right;
+}
+.bottom-left{
+  transform: translate(36px,40px) rotate(89deg);
+  transform-origin: top right;
+}
+.bottom-right{
+
+  transform: translate(40px,37px) rotate(181deg);
+  transform-origin: top left;
+}*/
+.bars {
+  position: relative;
+  width:280px;
+  top:10px
+}
+
+.bar{
+  position: absolute;
+  background-color: rgba(196, 196, 196, 0.39);
+  width:5px;
+  height:0px;
+  transition: height 0.1s;
+  border-radius: 2.5px;
+}
+.bar-top{
+  transform-origin: top;
+  transform: rotate(180deg);
+}
+.bar-bottom{
+  top:40px;
+  transform-origin: top;
+}
+
+.top-left{
+  transform: translate(-1px,0px) rotate(1deg);
+  transform-origin: top left;
+}
+.top-right{
+  transform: translate(-4px, 0px) rotate(-91deg);
+  transform-origin: top right;
+}
+.bottom-left{
+  transform: translate(36px,40px) rotate(89deg);
+  transform-origin: top right;
+}
+.bottom-right{
+
+  transform: translate(40px,40px) rotate(181deg);
+  transform-origin: top left;
+}
+
+.clicked .top-left{
+  background-color: #9f9f9f;
+}
+.clicked .top-right{
+    background-color: #9f9f9f;
+}
+.clicked .bottom-left{
+    background-color: #9f9f9f;
+}
+.clicked .bottom-right{
+    background-color: #9f9f9f;
+}
+
+.fade a p{
+  opacity: 0.2!important;
+}
+
+.front-image{
+  width:Calc(100% - 150px);
+  height:500px;
+  background-image: url("https://source.unsplash.com/1500x900/?ocean");
+  /*background-image: url("/portfolio/Capture.png");*/
+  background-clip: border-box;
+  background-size: cover;
+  position: absolute;
+  left:50%;
+  top:50%;
+    z-index: 1;
+  transform: translate(-50%,-50%);
+}
+.front-image-shadow{
+  content:"";
+  width:500px;
+  height:500px;
+  position: absolute;
+  left:51%;
+  top:51%;
+  transform: translate(-50%,-50%);
+  z-index: -2;
+  background-color: white;
+}
+.box{
+  width:450px;
+  height:450px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  border: solid rgba(255,255,255,0) 10px;
+}
