@@ -29,30 +29,11 @@ include 'templates/header.php';
 
 </div>
 <div class = "background-profile">
-<div class = "icons">
-  <div class = "icon">
-<!--  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adobe_Photoshop_CS6_icon.svg/2000px-Adobe_Photoshop_CS6_icon.svg.png">-->
-  <h4>PHOTOSHOP</h4>
-</div>
-<div class = "icon">
-<h4>INKSCAPE</h4>
-</div>
-<div class = "icon">
-<h4>INKSCAPE</h4>
-</div>
-<div class = "icon">
-<h4>BLENDER</h4>
-</div>
-<div class = "icon">
-<h4>SOLIDWORKS</h4>
-</div>
-<div class = "icon">
-<h4>MAYA</h4>
-</div>
-<div class = "icon">
-<h4>UNREAL ENGINE 4</h4>
-</div>
-</div>
+  <div class="icons" id="web">
+      <?php programDiv("Blender","5") ?>
+
+  </div>
+
 
 </div>
 
@@ -61,12 +42,24 @@ include 'templates/header.php';
 
 <div class = "background-profile">
 
-<div class = "face-image">
-</div>
 
 </div>
+</div>
+
 </body>
 
 </html>
 
-</div>
+<?php
+function programDiv($name, $level){
+?>
+  <div class = "icon-container">
+    <!--<img src="<?php echo $url ?>">-->
+    <h4><?php echo $name ?></h4>
+    <div class = "level <?php echo $level ?>">
+
+    </div>
+  </div>
+
+  <?php
+}?>
