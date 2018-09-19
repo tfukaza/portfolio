@@ -23,9 +23,9 @@ function workBox($Title, $Text, $imgUrl){
   <div class = "work-title">
     <h3><?php echo $Title ?></h3>
     <div class = "dot"></div>
-    <div><p><?php echo $Text ?></p></div>
+    <div class= "work-text"><p><?php echo $Text ?></p></div>
     <a class="work-button">
-      <p>DETAILS</p>
+      <p>----</p>
     </a>
   </div>
 </div>

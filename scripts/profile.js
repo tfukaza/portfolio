@@ -1,10 +1,10 @@
-var geekText = ["HELLO_WORLD", "this_js_library", "helps_you_make", "text_transitions", "very_easily", "with_just", "one_line_of_code"];
-var artText = ["Graphic_Designer", "Frontend_Dev", "Test2"];
+var geekText =["Engineer","Engineer","Elec.Eng.","Engineer","Engineer","Programmer","dog_lover","Engineer"]; //["Comp_Scientist","Elec_Engineer"];
+var artText = ["Designer","Designer","Designer","Painter","Designer","Designer","frontend_dev","Designer"];//["Graphic_Designer", "Frontend_Dev"];
 
 function genericLoad() {
 
-  document.getElementById('geek').tuna(geekText, 1545);
-    document.getElementById('art').tuna(artText, 2883);
+  document.getElementById('geek').tuna(geekText, 4000);
+  document.getElementById('art').tuna(artText, 3800);
 
 
 }

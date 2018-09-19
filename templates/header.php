@@ -9,8 +9,9 @@
 <ul id="header-desktop">
   <?php
   button('PROFILE');
+    button('RESUME');
   button('WORKS');
-  button('CONTACT');
+  //button('CONTACT');
   ?>
 </ul>
 <div class="header-mobile" id="closed">
@@ -19,10 +20,10 @@
     <a href = "/pages/PROFILE.php"><p>PROFILE</p></a>
   </li>
   <li>
-    <a href = "/pages/WORKS.php"><p>WORKS</p></a>
+    <a href = "/pages/RESUME.php"><p>RESUME</p></a>
   </li>
   <li>
-    <a href = "/pages/CONTACT.php"><p>CONTACT</p></a>
+    <a href = "/pages/WORKS.php"><p>WORKS</p></a>
   </li>
 </ul>
 </div>
@@ -71,4 +72,31 @@ function button($Text){
   </li>
 <?php
 }
+
+function lazyImage($src, $id){
+  ?>
+  <div class="image" id='<?php echo $id?>'>
+    <div class="load-cover">
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <h3>LOADING</h3>
+      </div>
+      <img class = "lazyload" data-src="<?php echo $src?>" alt="https://source.unsplash.com/500x500/?tech">
+    </div>
+
+
+  <?php
+}
+
+
+
+
+
+
+
+
+
+
 ?>
