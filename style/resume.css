@@ -1,0 +1,192 @@
+.resume h1, .resume h2{
+  letter-spacing: 2px;
+}
+
+.resume{
+  margin:60px 0px;
+  width:1000px;
+  height:280px;
+  position: relative;
+  border:0px solid red;
+  left:50%;
+  transform: translateX(-50%);
+  /*box-shadow: 5px 5px 30px 0px rgba(0,5,10,0.1);*/
+  overflow:hidden;
+}
+.resume-title{
+  position: relative;
+  display: inline-block;
+  left:50%;
+  transform: translateX(-50%);
+}
+.resume-title img{
+  width:150px;
+  height:250px;
+  position: absolute;
+  top:-50px;
+  left:50%;
+  transform: translate(-50%, 0px);
+  z-index:2;
+}
+#edu{
+  left:107%;
+}
+#exp{
+  left:52%;
+}
+.resume-title h2{
+  font-size: 50px;
+    display: inline-block;
+}
+
+.resume-header{
+position: relative;
+display: inline-block;
+  width:350px;
+  height:180px;
+  border-radius: 25px;
+  border:0px solid blue;
+  padding: 20px;
+  background-color: #fcfcfc;
+  box-shadow: 4px 4px 30px 0px #0f427512;
+}
+
+
+
+.resume-header h1{
+  position: relative;
+  left:20px;
+  font-size:40px;
+  color:#4b4a4a;
+  text-align: left;
+  margin:5px 0px 0px 0px;
+}
+
+.resume-header h2{
+  position: relative;
+  left:20px;
+  font-size:30px;
+  color:#5b5a5a;
+  text-align: left;
+  margin: 0px 0px;
+}
+
+.resume-header h3{
+  position: relative;
+    left:23px;
+  font-size:20px;
+  color:#8b8a8a;
+  text-align: left;
+  margin: 25px 0px 5px 0px;
+}
+
+.resume-text{
+  width:500px;
+  padding-left: 100px;
+position: relative;
+display: inline-block;
+border:0px solid green;
+vertical-align: top;
+}
+
+.resume-text p{
+text-align: left;
+}
+
+@media (max-width:1023px) {
+  .resume-title h2{
+    font-size: 30px;
+  }
+  .resume{
+    width:90%;
+    margin: 50px 5%;
+    height:auto;
+    left:0px;
+    transform: none;
+    box-shadow:5px 5px 20px 0px #4e585d1c;
+    border-radius:15px;
+  }
+  .resume-title img{
+    display:none;
+
+  }
+  .resume-header{
+    width:Calc(100% - 40px);
+    padding: 0px 20px;
+    background-color: transparent;
+    box-shadow: none;
+    margin:20px 0px;
+    height:50px;
+  }
+  .resume-header h1{
+    position: absolute;
+    font-size:30px;
+    letter-spacing: 1px;
+    left:50%;
+    transform: translateX(-50%);
+    margin:0px;
+  }
+  .resume-header h2{
+    position: absolute;
+    top: 40px;
+    left:50%;
+    transform: translateX(Calc(-100% - 20px));
+    font-size:20px;
+    letter-spacing: 0px;
+    margin:0px;
+    text-align: right;
+  }
+  .resume-header h3{
+    position: absolute;
+    top: 45px;
+    left:Calc(50% + 20px);
+    font-size:15px;
+    letter-spacing: 0px;
+    margin:0px;
+
+  }
+  .resume-text{
+    width:90%;
+    margin:10px 5%;
+    padding:0px;
+  }
+  .resume-text p{
+    color:#797979;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1700px) {
+  .resume {
+    width: 700px;
+  }
+  .resume-header{
+    width:250px;
+    height:140px;
+    border-radius:15px;
+  }
+  .resume-header h1{
+    font-size:30px;
+  }
+  .resume-header h2{
+    font-size:20px;
+  }
+  .resume-header h3{
+    font-size:15px;
+  }
+  .resume-text{
+
+    width:350px;
+    padding-left:49px;
+
+  }
+  .resume-text p{
+    font-size: 14px;
+    line-height:22px;
+  }
+  .work h3{
+    font-size: 20px;
+  }
+  .work p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

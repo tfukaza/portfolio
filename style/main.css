@@ -1,0 +1,64 @@
+
+@media (max-width: 500px) {
+  #dev {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: Calc(40vh - 50%);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1023px) {
+  #dev-container{
+    position: relative;
+    width:90%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+
+  #dev {
+    width: 400px;
+    height: 400px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30vh;
+  }
+
+  #dev-box {
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #dev-box p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+ #dev-container{
+   position: relative;
+   width:1000px;
+   left:50%;
+   transform: translateX(-50%);
+ }
+
+  #dev {
+    width: 400px;
+    height: 400px;
+    margin-left: 10%;
+  }
+
+  #dev-box {
+    width: Calc(90% - 500px);
+    right: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #dev-box p {
+    text-align: left;
+  }
+}
