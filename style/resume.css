@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+.resume{
+  width:1000px;
+=======
 .resume h1, .resume h2{
   letter-spacing: 2px;
 }
@@ -6,10 +10,16 @@
   margin:60px 0px;
   width:1000px;
   height:280px;
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   position: relative;
   border:0px solid red;
   left:50%;
   transform: translateX(-50%);
+<<<<<<< HEAD
+  box-shadow: 5px 5px 30px 0px rgba(0,5,10,0.1);
+  overflow:hidden;
+}
+=======
   /*box-shadow: 5px 5px 30px 0px rgba(0,5,10,0.1);*/
   overflow:hidden;
 }
@@ -38,10 +48,18 @@
   font-size: 50px;
     display: inline-block;
 }
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
 
 .resume-header{
 position: relative;
 display: inline-block;
+<<<<<<< HEAD
+  width:380px;
+  border:0px solid blue;
+  padding: 10px;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px 0px rgba(0,5,10,0.0);
+=======
   width:350px;
   height:180px;
   border-radius: 25px;
@@ -49,6 +67,7 @@ display: inline-block;
   padding: 20px;
   background-color: #fcfcfc;
   box-shadow: 4px 4px 30px 0px #0f427512;
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
 }
 
 
@@ -64,7 +83,11 @@ display: inline-block;
 
 .resume-header h2{
   position: relative;
+<<<<<<< HEAD
+    left:20px;
+=======
   left:20px;
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   font-size:30px;
   color:#5b5a5a;
   text-align: left;
@@ -81,13 +104,19 @@ display: inline-block;
 }
 
 .resume-text{
+<<<<<<< HEAD
+  width:590px;
+=======
   width:500px;
   padding-left: 100px;
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
 position: relative;
 display: inline-block;
 border:0px solid green;
 vertical-align: top;
 }
+<<<<<<< HEAD
+=======
 
 .resume-text p{
 text-align: left;
@@ -190,3 +219,4 @@ text-align: left;
     line-height: 20px;
   }
 }
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1

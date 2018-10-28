@@ -21,6 +21,12 @@
   </li>
   <li>
     <a href = "/pages/RESUME.php"><p>RESUME</p></a>
+<<<<<<< HEAD
+  </li>
+  <li>
+    <a href = "/pages/WORKS.php"><p>WORKS</p></a>
+=======
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   </li>
   <li>
     <a href = "/pages/WORKS.php"><p>WORKS</p></a>

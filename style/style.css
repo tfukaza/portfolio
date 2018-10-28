@@ -23,8 +23,17 @@ body {
   margin-bottom:100px;
 }
 
+<<<<<<< HEAD
+#profile-container{
+  height:800px;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Montserrat';
+=======
 h1, h2, h3, h4, h5, p {
   font-family: 'Raleway';
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   text-align: center;
 }
 
