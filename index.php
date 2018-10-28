@@ -8,15 +8,17 @@
 <script src = "/script.js"></script>
 
 <body>
-
-<?php
+<p>The website has moved, click
+<a href="www.fukazawa.website">HERE</a>
+to move</p>
+</*?php
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/templates/header.php";
 include_once($path);
-?>
+?*/>
 
   <!--<div class="container" id="dev-con">-->
-
+<!--
   <img id="dev" src = "/img/construction.svg">
   <div id = "dev-box">
   <h3>This site is under heavy development</h3>

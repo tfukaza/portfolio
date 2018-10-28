@@ -24,7 +24,7 @@ body {
   height:800px;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
   font-family: 'Montserrat';
   text-align: center;
 }
@@ -360,7 +360,7 @@ li:hover .bottom-left, li:hover .bottom-right {
 
 .image img {
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   z-index: -1;
 }
 

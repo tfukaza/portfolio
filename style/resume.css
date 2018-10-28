@@ -1,0 +1,56 @@
+.resume{
+  width:1000px;
+  position: relative;
+  border:0px solid red;
+  left:50%;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 30px 0px rgba(0,5,10,0.1);
+  overflow:hidden;
+}
+
+.resume-header{
+position: relative;
+display: inline-block;
+  width:380px;
+  border:0px solid blue;
+  padding: 10px;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px 0px rgba(0,5,10,0.0);
+}
+
+
+
+.resume-header h1{
+  position: relative;
+  left:20px;
+  font-size:40px;
+  color:#4b4a4a;
+  text-align: left;
+  margin:5px 0px 0px 0px;
+}
+
+.resume-header h2{
+  position: relative;
+    left:20px;
+  font-size:30px;
+  color:#5b5a5a;
+  text-align: left;
+  margin: 0px 0px;
+}
+
+.resume-header h3{
+  position: relative;
+    left:23px;
+  font-size:20px;
+  color:#8b8a8a;
+  text-align: left;
+  margin: 25px 0px 5px 0px;
+}
+
+.resume-text{
+  width:590px;
+position: relative;
+display: inline-block;
+border:0px solid green;
+vertical-align: top;
+}

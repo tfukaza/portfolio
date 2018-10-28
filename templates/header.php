@@ -9,14 +9,18 @@
 <ul id="header-desktop">
   <?php
   button('PROFILE');
+    button('RESUME');
   button('WORKS');
-  button('CONTACT');
+  //button('CONTACT');
   ?>
 </ul>
 <div class="header-mobile" id="closed">
 <ul>
   <li>
     <a href = "/pages/PROFILE.php"><p>PROFILE</p></a>
+  </li>
+  <li>
+    <a href = "/pages/RESUME.php"><p>RESUME</p></a>
   </li>
   <li>
     <a href = "/pages/WORKS.php"><p>WORKS</p></a>
