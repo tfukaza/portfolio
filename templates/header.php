@@ -21,12 +21,15 @@
   </li>
   <li>
     <a href = "/pages/RESUME.php"><p>RESUME</p></a>
+<<<<<<< HEAD
   </li>
   <li>
     <a href = "/pages/WORKS.php"><p>WORKS</p></a>
+=======
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   </li>
   <li>
-    <a href = "/pages/CONTACT.php"><p>CONTACT</p></a>
+    <a href = "/pages/WORKS.php"><p>WORKS</p></a>
   </li>
 </ul>
 </div>
@@ -75,4 +78,31 @@ function button($Text){
   </li>
 <?php
 }
+
+function lazyImage($src, $id){
+  ?>
+  <div class="image" id='<?php echo $id?>'>
+    <div class="load-cover">
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <div class="load-bar"></div>
+        <h3>LOADING</h3>
+      </div>
+      <img class = "lazyload" data-src="<?php echo $src?>" alt="https://source.unsplash.com/500x500/?tech">
+    </div>
+
+
+  <?php
+}
+
+
+
+
+
+
+
+
+
+
 ?>

@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
 @import url('https://fonts.googleapis.com/earlyaccess/nicomoji.css');
 /*
 0    ~  450: smartphone
 451  ~ 1023: tablet
-1024 ~ 1365: narrow screen
-1365 ~ 1920: default resolution
-1921 ~ 3840: high-res screen
+1024 ~ 1700: narrow screen
+1701 ~ 2560: default resolution
+2561 ~ 3840: high-res screen
 */
 
 .section {
   width: 100%;
+
 }
 
 body {
@@ -18,25 +20,32 @@ body {
 
 .container {
   position: relative;
+  margin-bottom:100px;
 }
 
+<<<<<<< HEAD
 #profile-container{
   height:800px;
 }
 
 h1, h2, h3, h4, h5, p {
   font-family: 'Montserrat';
+=======
+h1, h2, h3, h4, h5, p {
+  font-family: 'Raleway';
+>>>>>>> 123e990d96503c1bca1b71c249c7e1e2343be3b1
   text-align: center;
 }
 
 h1, h2 {
   font-size: 80px;
-  color: #f0f0f0;
+  color: #6d6d6d;
   z-index: 2;
+  letter-spacing: 10px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 60px;
   color: #a0a0a0;
   z-index: 2;
 }
@@ -53,6 +62,26 @@ p {
   display: block;
 }
 
+.nav-button{
+  display: inline-block;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #36f2d4 0%,#4eccff 50%,#dba2e0 100%);
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow:6px 6px 15px 0px #0f44792e;
+}
+.nav-button p{
+  color:white;
+  margin:6px 0px;
+  display: inline-block;
+  width:100%;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
 #title {
   position: absolute;
   top: 50%;
@@ -63,28 +92,6 @@ p {
 
 #title-container {
   height: 600px;
-}
-
-#dev-con {
-  margin-top: Calc(40vh - 200px);
-  margin-bottom: Calc(40vh - 200px);
-}
-
-#dev {
-  width: 400px;
-  height: 400px;
-  margin-left: 10%;
-}
-
-#dev-box {
-  width: Calc(90% - 500px);
-  right: 20%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-#dev-box p {
-  text-align: left;
 }
 
 .home {
@@ -348,7 +355,7 @@ li:hover .bottom-left, li:hover .bottom-right {
 }
 
 .image {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
   z-index: 1;
 }
@@ -374,12 +381,14 @@ li:hover .bottom-left, li:hover .bottom-right {
 }
 
 .load-bar {
+  border-radius: 15px;
   width: 30px;
   height: 30px;
   background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
+  transform-origin: bottom;
   animation-name: load-anim;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -503,20 +512,20 @@ li:hover .bottom-left, li:hover .bottom-right {
 @media (max-width:450px) {
   h1, h2 {
     font-size: 80px;
-    color: #f0f0f0;
+    color: #3a3a3a;
     z-index: 2;
   }
 
   h3 {
     font-size: 40px;
-    color: #a0a0a0;
+    color: #3a3a3a;
     z-index: 2;
   }
 
   p {
 
     font-size: 18px;
-    color: #a0a0a0;
+    color: #3a3a3a;
     line-height: 30px;
   }
 }
@@ -524,20 +533,20 @@ li:hover .bottom-left, li:hover .bottom-right {
 @media (max-width:1023px) {
   h1, h2 {
     font-size: 50px;
-    color: #f0f0f0;
+    color: #3a3a3a;
     z-index: 2;
   }
 
   h3 {
     font-size: 30px;
-    color: #a0a0a0;
+    color: #3a3a3a;
     z-index: 2;
   }
 
   p {
 
     font-size: 15px;
-    color: #a0a0a0;
+    color: #3a3a3a;
     line-height: 30px;
   }
   #header-mobile{
@@ -548,53 +557,67 @@ li:hover .bottom-left, li:hover .bottom-right {
   #header-desktop{
     display: none;
   }
+  .container{
+    margin-top:100px;
+  }
   .header{
     margin:0px;
     position: fixed;
     top:0px;
     height:70px;
-    background-color: rgba(255,0,0,1);
+    background-color: rgba(255,0,0,0);
     box-shadow: 5px 5px 0px 10px rgba(0, 10, 20, 0.0);
 
   }
   .home{
+    background-color: #ffffff;
     width: 70px;
     height:70px;
+    border-radius: 35px;
+    box-shadow: 4px 4px 30px 0pc #00629426;
     left:15px;
     top:10px;
   }
   .hamburger{
+    background-color: #ffffff;
     position: absolute;
-    top:30px;
-    right:30px;
-    width:40px;
-    height:40px;
+    top:10px;
+    right:15px;
+    width: 70px;
+    height:70px;
+    border-radius: 35px;
+    /*box-shadow: 4px 4px 30px 0pc #00629426;*/
     cursor: pointer;
   }
   .hamburger span{
     width:32px;
     height:4px;
     background-color: black;
+    left:19px;
     position: absolute;
   }
   .hamburger span:nth-child(1){
-    top:0px;
+    top:20px;
   }
   .hamburger span:nth-child(2){
-    top:12px;
+    top:33px;
   }
   .hamburger span:nth-child(3){
-    top:24px;
+    top:45px;
   }
   .header-mobile{
-        width:100%;
-        height:100vh;
+        box-shadow: 4px 4px 30px 0pc #00629426;
+        height:70px;
+        width:70px;
         position: fixed;
-        top:-100vh;
-        left:0px;
-        background-color: green;
-        transition: top 0.2s;
+        top:10px;
+        right:15px;
+        background-color: white;
+        border-radius: 35px;
         display: block;
+        transition: height 0.2s, width 0.1s;
+        transition-delay: 0.4s;
+        overflow: hidden;
   }
   .header-mobile a p{
     top:50px;
@@ -612,17 +635,33 @@ li:hover .bottom-left, li:hover .bottom-right {
     position:relative;
   }
   .header-mobile li{
+    opacity:0;
     left:50%;
     transform: translateX(-50%);
+    transition: opacity 0.1s;
+  }
+  .header-mobile li:nth-child(1){
+    transition-delay: 0.1s;
+  }
+  .header-mobile li:nth-child(2){
+    transition-delay: 0.2s;
+  }
+  .header-mobile li:nth-child(3){
+    transition-delay: 0.3s;
   }
   #opened{
-    top:0;
+    width:250px;
+    height:300px;
+    transition-delay: 0s;
+  }
+  #opened li{
+    opacity: 1;
   }
   .header-mobile ul{
     width: 80%;
     position: absolute;
     left:50%;
-    top:50vh;
+    top:150px;
     transform: translate(-50%,-50%);
   }
   #closed{
@@ -630,10 +669,23 @@ li:hover .bottom-left, li:hover .bottom-right {
   }
 }
 
-@media (min-width: 1024px) and (max-width:1365px) {
+@media (min-width: 1024px) and (max-width:1700px) {
+  .header ul{
+    width:600px;
+  }
+  .header li{
+    width:197px;
+  }
+.header li a{
+  width:120px;
+  margin:0px 40px;
 
 }
+.header li a p{
+  font-size:13px;
+}
+}
 
-@media (min-width:1921px) {
+@media (min-width:2561px) {
 
 }
